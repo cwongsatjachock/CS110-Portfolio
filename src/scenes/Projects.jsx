@@ -66,7 +66,7 @@ const Projects = () => {
             >
                 <div>
                 <p className="font-playfair font-semibold text-4xl">
-                    <span className="text-[#74c365]">PRO</span>JECTS
+                    <span className="text-[#74c365]">PRO</span>JECTS AND EXPERIENCES
                 </p>
                     <div className="flex justify-center mt-5">
                     <LineGradient width="w-1/3" />
@@ -88,7 +88,7 @@ const Projects = () => {
                 >
                     {/* ROW 1 */}
                     <div
-                        className="flex justify-center text-center items-center p-10 bg-red
+                        className="flex justify-center text-center items-center p-10 bg-[#77dd77]
                                     max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold" 
                     >
                         BEAUTIFUL USER INTERFACES
@@ -98,19 +98,19 @@ const Projects = () => {
 
                     {/* ROW 2 */}
                     <div
-                        className="flex justify-center text-center items-center p-10 bg-blue
+                        className="flex justify-center text-center items-center p-10 bg-[#74c365]
                                     max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold" 
                     >
                         INTUITIVE NAVIGATION
                     </div>
                     <div
-                        className="flex justify-center text-center items-center p-10 bg-blue
+                        className="flex justify-center text-center items-center p-10 bg-[#aadd77]
                                     max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold" 
                     >
                         RESPONSIVE DESIGN
                     </div>
                     <div
-                        className="flex justify-center text-center items-center p-10 bg-blue
+                        className="flex justify-center text-center items-center p-10 bg-[#90ee90]
                                     max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold" 
                     >
                         SEAMLESS FUNCTIONALITY
@@ -118,15 +118,110 @@ const Projects = () => {
 
                     {/* ROW 3 */}
                     <Project title="Monster Slayer" desc="Hunt monsters in your terminal" link="https://github.com/cwongsatjachock/Monster-Slayer"/>
-                    <Project title="Project 7" />
+                    <Project title="Flashcard App" desc="Learn using flashcards with this app" link="https://github.com/cwongsatjachock/Flashcard-App?tab=readme-ov-file"/>
                     <div
-                        className="flex justify-center text-center items-center p-10 bg-blue
+                        className="flex justify-center text-center items-center p-10 bg-[#77ddaa]
                                     max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold" 
                     >
                         SMOOTH USER EXPERIENCE
                     </div>
                 </motion.div>
             </div>
+
+      {/* EXPERIENCES */}
+      <div className="md:flex md:justify-between md:gap-16 mt-20">
+        <motion.div
+          className="md:w-full"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <p className="font-playfair font-semibold text-4xl mb-5">
+            <span className="text-[#64e986]">EXP</span>ERIENCES
+          </p>
+          <LineGradient width="w-1/3" />
+          <div className="mt-5 mb-7">
+            <div className="flex justify-between">
+              <span>Tech Intern - Remote</span>
+              <span>Feb. 2022 – Oct. 2022</span>
+            </div>
+            <div className="flex justify-between">
+              <a href="https://necessarybehavior.com/" target="_blank" rel="noopener noreferrer" className="hover:text-lime-600">Necessary Behavior</a>
+              <span>Los Angeles, CA</span>
+            </div>
+          </div>
+        <a href="https://necessarybehavior.com/" target="_blank" rel="noopener noreferrer">
+            <img 
+                src="../assets/nblogo.jpg"
+                alt="Necessary Behavior Logo"
+            />
+        </a>
+        </motion.div>
+      </div>
+
+      {/* CERTIFICATIONS */}
+      <div className="md:flex md:justify-between md:gap-16 mt-20">
+        <motion.div
+          className="md:w-full"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.8 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <p className="font-playfair font-semibold text-4xl mb-5">
+            <span className="text-[#64e986]">CERT</span>IFICATIONS
+          </p>
+          <LineGradient width="w-1/3" />
+          <div className="mt-5 mb-7">
+            <div className="flex justify-between">
+                <span>Mechanical Design - SolidWorks Associate</span>
+                <span>Dec. 2022</span>
+            </div>
+            <div className="flex justify-between">
+                <span>Dassault Systemes</span>
+            </div>
+            </div>
+
+            <div className="mt-5 mb-7">
+            <div className="flex justify-between">
+                <span>Programming for Everybody Specialization</span>
+                <span>Jan. 2022</span>
+            </div>
+            <div className="flex justify-between">
+                <span>Coursera - University of Michigan</span>
+            </div>
+            </div>
+
+            <div className="mt-5 mb-7">
+            <div className="flex justify-between">
+                <span>Google Support IT</span>
+                <span>Dec. 2021</span>
+            </div>
+            <div className="flex justify-between">
+                <span>Coursera - Google</span>
+            </div>
+            </div>
+
+            <div className="mt-5 mb-7">
+            <div className="flex justify-between">
+                <span>Software Engineering Virtual Experience Internship</span>
+                <span>Oct. 2021</span>
+            </div>
+            <div className="flex justify-between">
+                <span>JPMorgan Chase &amp; Co.</span>
+            </div>
+            </div>
+        </motion.div>
+      </div>
     </section>
   )
 }

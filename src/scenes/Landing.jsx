@@ -2,6 +2,7 @@ import useMediaQuery from "../hooks/useMediaQuery"
 import { motion } from "framer-motion"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import SocialMediaIcons from "../components/SocialMediaIcons";
+import Resume from "../../public/assets/Resume.pdf"
 
 const Landing = ({setSelectedPage}) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
@@ -61,8 +62,8 @@ const Landing = ({setSelectedPage}) => {
                     </span>
                 </p>
                 <p className="mt-10 mb-7 text-sm text-center md:text-start">
-                Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-                viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+                I'm a graduting student of 2024 from UC Riverside with a major in Computer Science. I have a passion with computer
+                and I'm excited to bring my knowledge, skills, and enthusiasm into the professional world.
                 </p>
             </motion.div>
 
@@ -79,7 +80,7 @@ const Landing = ({setSelectedPage}) => {
                 }}
             >
                 <AnchorLink
-                    className="bg-[#77dd77] text-white rounded-sm py-3 px-7 font-semibold
+                    className="bg-[#77dd77] text-white rounded-sm py-3 px-5 font-semibold
                         hover:bg-[#006D5B] hover:text-[#90ee90] transition duration-500"
                     onClick={() => setSelectedPage("contact")}
                     href="#contact"
@@ -93,10 +94,17 @@ const Landing = ({setSelectedPage}) => {
                 >
                     <div
                         className="bg-[#006D5B] hover:text-[#90ee90] transition duration-500 w-full h-full flex items-center
-                        justify-center font-playfair px-10">
+                        justify-center font-playfair px-5">
                     Let's talk
                     </div>
                 </AnchorLink>
+                <a
+                    className="bg-[#77dd77] text-white rounded-sm py-3 px-5 font-semibold
+                        hover:bg-[#006D5B] hover:text-[#90ee90] transition duration-500"
+                    onClick={() =>  window.open('assets/Resume.pdf', '_blank')}
+                >
+                    Resume
+                </a>
             </motion.div>
 
             <motion.div
