@@ -9,6 +9,7 @@ import Projects from "./scenes/Projects";
 import Interests from "./scenes/Interests";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
+import LeavesCanvas from './components/LeavesBackground';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -56,6 +57,7 @@ function App() {
         <Contact />
       </div>
       <Footer />
+      <LeavesCanvas />
     </div>
   )
 }
