@@ -26,12 +26,6 @@ export default {
         playfair: ["Playfair Display", "serif"],
         opensans: ["Open Sans", "san-serif"]
       },
-      content: {
-        brush: "url('./assets/brush.png')",
-        computer: "url('./assets/computer.png')",
-        vgames: "url('./assets/vgames.png')",
-        pickleball: "url('./assets/pickleball.png')",
-      }
     },
     screens: {
       xs: "480px",

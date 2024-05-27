@@ -32,7 +32,7 @@ const Interests = () => {
           {/* TESTIMONIALS */}
           <div className="md:flex md:justify-between gap-8">
             <motion.div
-              className={`bg-[#90ee90] ${interestStyle} before:content-computer`}
+              className={`bg-[#90ee90] ${interestStyle}`}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -42,13 +42,14 @@ const Interests = () => {
                 visible: { opacity: 1, scale: 1 },
               }}
             >
+              <img src="assets/computer.png" alt="pcbuilding" />
               <p className="text-center text-xl">
-                Building and theorycrafting computers
+                Building computers
               </p>
             </motion.div>
     
             <motion.div
-              className={`bg-[#aadd77] ${interestStyle} before:content-vgames`}
+              className={`bg-[#aadd77] ${interestStyle}`}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -58,13 +59,14 @@ const Interests = () => {
                 visible: { opacity: 1, scale: 1 },
               }}
             >
+              <img src="assets/vgames.png" alt="video games" />
               <p className="text-center text-xl">
                 Playing video games
               </p>
             </motion.div>
     
             <motion.div
-              className={`bg-[#74c365] ${interestStyle} before:content-pickleball`}
+              className={`bg-[#74c365] ${interestStyle}`}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -74,9 +76,10 @@ const Interests = () => {
                 visible: { opacity: 1, scale: 1 },
               }}
             >
-              <p className="text-center text-xl">
-                Engage in Pickleballs 
-              </p>
+            <img src="assets/pickleball.png" alt="pickleball" />
+            <p className="text-center text-xl">
+              Engage in Pickleballs 
+            </p>
             </motion.div>
           </div>
         </section>
