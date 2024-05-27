@@ -157,7 +157,7 @@ const Projects = () => {
           </div>
         <a href="https://necessarybehavior.com/" target="_blank" rel="noopener noreferrer">
             <img 
-                src="/assets/nblogo.jpg"
+                src="assets/nblogo.jpg"
                 alt="Necessary Behavior Logo"
             />
         </a>
