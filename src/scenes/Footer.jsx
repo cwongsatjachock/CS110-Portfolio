@@ -10,7 +10,7 @@ const Footer = () => {
             CHAIWAT WONGSATJACHOCK
           </p>
           <p className="font-playfair text-md text-[#90ee90]">
-            ©2022 WONGSATJACHOCK. All Rights Reserved.
+            ©2024 WONGSATJACHOCK. All Rights Reserved.
           </p>
         </div>
       </div>
