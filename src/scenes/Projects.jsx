@@ -34,7 +34,7 @@ const Project = ({ title, desc, link }) => {
                 </p>
             </div>
             <img 
-            src={`../assets/${projectTitle}.jpeg`} 
+            src={`assets/${projectTitle}.jpeg`} 
             alt={projectTitle}
             width={400}
             height={400}
@@ -157,7 +157,7 @@ const Projects = () => {
           </div>
         <a href="https://necessarybehavior.com/" target="_blank" rel="noopener noreferrer">
             <img 
-                src="../assets/nblogo.jpg"
+                src="/assets/nblogo.jpg"
                 alt="Necessary Behavior Logo"
             />
         </a>
