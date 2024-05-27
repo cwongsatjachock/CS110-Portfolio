@@ -977,11 +977,6 @@ video {
   background-color: rgb(220 68 146 / var(--tw-bg-opacity));
 }
 
-.bg-yellow{
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 204 73 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-rainblue{
   background-image: linear-gradient(90deg, #218b82 14.53%, #77dd77 69.36%, #90ee90 117.73%);
 }
@@ -1323,18 +1318,18 @@ body,
   border-color: rgb(170 221 119 / var(--tw-border-opacity));
 }
 
-.before\:content-person1::before{
-  --tw-content: url('./assets/person-1.png');
+.before\:content-computer::before{
+  --tw-content: url('./assets/computer.png');
   content: var(--tw-content);
 }
 
-.before\:content-person2::before{
-  --tw-content: url('./assets/person-2.png');
+.before\:content-pickleball::before{
+  --tw-content: url('./assets/pickleball.png');
   content: var(--tw-content);
 }
 
-.before\:content-person3::before{
-  --tw-content: url('./assets/person-3.png');
+.before\:content-vgames::before{
+  --tw-content: url('./assets/vgames.png');
   content: var(--tw-content);
 }
 

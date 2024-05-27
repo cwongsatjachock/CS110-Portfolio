@@ -25,15 +25,14 @@ const Interests = () => {
             </p>
             <LineGradient width="mx-auto w-2/4" />
             <p className="mt-10">
-              Here's What People are Saying About My Work. Aliquam aliquet integer
-              ut fames odio in at. At magna ornare dictum lectus.
+              Here's are some of my interests.
             </p>
           </motion.div>
     
           {/* TESTIMONIALS */}
           <div className="md:flex md:justify-between gap-8">
             <motion.div
-              className={`bg-blue ${interestStyle} before:content-person1`}
+              className={`bg-[#90ee90] ${interestStyle} before:content-computer`}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -44,12 +43,12 @@ const Interests = () => {
               }}
             >
               <p className="text-center text-xl">
-                A auctor pharetra hendrerit mattis amet etiam interdum platea.
+                Building and theorycrafting computers
               </p>
             </motion.div>
     
             <motion.div
-              className={`bg-red ${interestStyle} before:content-person2`}
+              className={`bg-[#aadd77] ${interestStyle} before:content-vgames`}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -60,13 +59,12 @@ const Interests = () => {
               }}
             >
               <p className="text-center text-xl">
-                Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
-                lectus.
+                Playing video games
               </p>
             </motion.div>
     
             <motion.div
-              className={`bg-yellow ${interestStyle} before:content-person3`}
+              className={`bg-[#74c365] ${interestStyle} before:content-pickleball`}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -77,7 +75,7 @@ const Interests = () => {
               }}
             >
               <p className="text-center text-xl">
-                Fames odio in at. At magna ornare dictum lectus.
+                Engage in Pickleballs 
               </p>
             </motion.div>
           </div>
